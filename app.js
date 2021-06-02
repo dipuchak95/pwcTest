@@ -1,6 +1,7 @@
 /*
 Make an API to Upload Images
 Filename: original name+ date+ time 
+File will be saved in the Upload folder
 */
 
 const multer = require("multer");
@@ -34,7 +35,7 @@ var storage = multer.diskStorage({
       "_" +
       currentdate.getSeconds();
 
-    cb(null, originalName +" "+datetime+ "." + extension);
+    cb(null, originalName + " " + datetime + "." + extension);
   },
 });
 
