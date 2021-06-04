@@ -9,4 +9,6 @@ router.get('/test', (req,res) => {
 
 router.post('/image', fileControllers.imagePost);
 
+router.get('/odd', fileControllers.odd);
+
 module.exports = router;
